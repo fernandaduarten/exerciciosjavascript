@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>o que o JavaScritp faz?</h2>
+<p> JavaScript pode mostrar ou ocultar elementos HTML!</p>
+
+<p id="demo" style="display:none">Olá JV!.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">ocultar!</button>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">mostrar!</button>
+
+<script>
+function mostrar(){
+document.getElementById('demo').style.display='block';
+}
+</script>
+
+<script>
+function ocultar(){
+document.getElementById('demo').style.display='none';
+}
+</script>
+
+</body>
+</html> 
