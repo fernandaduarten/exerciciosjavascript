@@ -1,7 +1,7 @@
 # exerciciosjavascript
-
-aula 1 - Ocultando elementos
-aula 2 - JV Arrays / operador de resto%
-aula 3 - operador +=
-aula 4 - Valores constantes e erros
-aula 5 - Declarando variáveis
+- aula 1 - Ocultando elementos.
+- Aula 2 - JV Arrays / operador de resto%.
+- Aula 3 - operador +=.
+- Aula 4 - Valores constantes e erros.
+- Aula 5 - Declarando variáveis.
+- Aula 6 - Cindicionais com JavaScript.
