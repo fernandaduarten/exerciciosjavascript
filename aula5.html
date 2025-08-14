@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Redeclarando uma Variavel usando let</h2>
+
+<p id="demo"></p>
+
+<script>
+let xLet = 10;
+// Aqui o xLet é 10
+
+{  
+let xLet = 2;
+// Aqui o xLet é 2
+}
+
+// Aqui xLet é 10
+document.getElementById("demo").innerHTML = xLet;
+</script>
+
+
+<h2>Redeclarando uma Variavel usando var</h2>
+
+<p id="demoVar"></p>
+
+<script>
+var xVar = 10;
+// Aqui o xVar é 10
+
+{  
+var xVar = 2;
+// Aqui o xVar é 2
+}
+
+// Aqui xVar é 2
+document.getElementById("demoVar").innerHTML = xVar;
+</script>
+</body>
+</html>
