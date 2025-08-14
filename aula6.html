@@ -1,30 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Condicionais com JavaScripts if</h1>
-    <p>
-        mostre "Bom Dia" se a hora for menos que 18:</p>
-        <h2> hora atual: <span id="hora-atual"></span> </h2>
-        <p id="demo">Bom Dia</p>
+    <p>mostre "Bom Dia" se a hora for menos que 18:</p>
+    <h2> hora atual: <span id="hora-atual"></span> </h2>
+    <p id="demo">Bom Dia</p>
 
-        <script>
-            var hora = prompt("informe a hora");
-            document.getElementById("hora-atual").innerHTML = hora;
-            if (hora < 12) {
-                document.getElementById("demo").innerHTML = "Bom Dia!";
-            }
-            else if (hora <18){
-                document.getElementById("demo").innerHTML = "Boa Tarde!";
-            }
-            else {
-                 document.getElementById("demo").innerHTML = "Boa Noite!";
-            }
+    <script>
+        var hora = prompt("informe a hora");
+        document.getElementById("hora-atual").innerHTML = hora;
+        if (hora < 12) {
+            document.getElementById("demo").innerHTML = "Bom Dia!";
+        }
+        else if (hora < 18) {
+            document.getElementById("demo").innerHTML = "Boa Tarde!";
+        }
+        else {
+            document.getElementById("demo").innerHTML = "Boa Noite!";
+        }
 
-        </script>
+    </script>
+
+    <!-- outra versão do mesmo codigo -->
+    <h2> hora atual: <span id="hora-atual"></span> </h2>
+    <p id="demo">Bom Dia</p>
+    <script>
+        function mostrar(onde, msg) {
+            document.getElementById("onde").innerHTML = msg;
+        }
+        var hora = prompt("informe a hora");
+        mostrar("hora", hora);
+        if (hora < 12) {
+            mostrar("demo2", "Bom Dia");
+        }
+        else if (hora < 18) {
+            mostrar("demo2", "Boa Tarde");
+        }
+        else {
+            mostrar("demo2", "Boa Noite");
+        }
+    </script>
+
+    <!-- Repetição com JavaScript -->
+
+    <h2> Repetições com JavaScript</h2>
+    <p id="demo3"></p>
+
+    <script>
+        const alunos = ["Tanuzia", "Fcº Antonio", "Karla", "Lucas", "Fernanda", "ant lucas", "joão"];
+
+        let text = "<h3> Ordem normal:</h3>";
+        for (let i = 0; i < alunos.length; i++) {
+            text += (i+1) + " " + alunos[i] + "<br>";
+        }
+        text += "<h3>ordem decrescente</h3>"
+        for (let i = alunos.length - 1; i >= 0; i--) {
+            text += (i+1) + " " + alunos[i] + "<br>";
+        }
+
+        document.getElementById("demo3").innerHTML = text;
+    </script>
+
 </body>
+
 </html>
